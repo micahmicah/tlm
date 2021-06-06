@@ -23,8 +23,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   The work of artist Thomas Lyon Mills, also known as Tom Mills.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://https://micahmicah.github.io/tlm/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: jekyll
+twitter_username: micahmicah
+github_username: micahmicah
 
 # Build settings
 theme: minima
