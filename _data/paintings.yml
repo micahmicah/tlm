@@ -1,3 +1,14 @@
+- title: "Liminatus Tokalı Kilise"
+  start-date: "2008"
+  end-date: "2021"
+  materials: "watercolor, conte crayon on pieced paper"
+  height: "21.75"
+  width: "21.75"
+  images:
+    - image: assets/img/liminatus-tokali-kilise/liminatus-tokali-kilise-1200.jpg
+    - detail: assets/img/liminatus-tokali-kilise/liminatus-tokali-kilise-detail-2.jpg
+    - thumbnail: assets/img/liminatus-tokali-kilise/liminatus-tokali-kilise-thumb.jpg
+
 - title: "Liminatus Padre Alessandro"
   start-date: "2002"
   end-date: "2021"
