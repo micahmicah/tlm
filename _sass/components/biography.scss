@@ -1,0 +1,13 @@
+.biography{
+
+	@include respond-above(medium){
+		@include grid-column(6);
+		@include grid-push(5);
+	};
+
+
+	p{
+		max-width:30em;
+
+	}
+}

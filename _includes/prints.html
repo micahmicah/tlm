@@ -1,0 +1,22 @@
+{% for entry in site.data.prints %}
+  <section class="print artwork" id="{{ entry.title | slugify }}">
+  
+  {% for item in entry.images %}
+    {% if item.image %}
+      <figure>
+        <img src="{{item.image}}" alt="{{entry.title}}" class="lazyload">
+        <figcaption>
+          <h2 class="artwork-title">{{entry.title}}</h2>
+          <span class="artwork-materials">{{entry.materials}}</span><br>
+          <span class="artwork-dimensions">{{entry.width}}&quot; &times; {{entry.height}}&quot;</span><br>
+          <span class="artwork-date">{{entry.start-date}} {% if entry.end-date %} – {{entry.end-date}} {% endif %}</span>
+          {% if entry.collection %}
+            <br>
+            <span class="artwork-collection">{{entry.collection}}</span>
+          {% endif %}
+        </figcaption>
+      </figure>
+    {% endif %}
+  {% endfor %}
+  </section>
+{% endfor %}

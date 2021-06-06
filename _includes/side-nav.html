@@ -1,0 +1,49 @@
+
+
+
+
+	 {% if page.section == "Paintings" %}
+		{% assign pageData = site.data.paintings %}
+	 {% elsif page.section == "prints" %}
+		{% assign pageData = site.data.prints %}
+	 {% elsif page.section == "poems"%}
+		{% assign pageData = site.data.poems %}
+	{% elsif page.section == "sketchbook" %}
+		{% assign pageData = site.data.sketchbooks %}
+	{% elsif page.section == "statements" %}
+		{% assign pageData = site.data.statements %}
+    {% endif %}
+
+	{% if page.type == "image" %}
+		<a class="drawer-activator">Index</a>
+		<nav class="drawer image-drawer">
+			{% for entry in pageData %}
+			{% if page.section == "Paintings" or page.section == "prints" %}
+				 <a href="#{{entry.title | slugify}}" class="drawer-item thumbnail">
+					{% for image in entry.images %}
+						<img src="{{image.thumbnail}}" alt="">
+					{% endfor %}
+				 </a>
+				{% elsif page.section == "sketchbook" %}
+				{% assign numSketches = numSketches | plus: 1 %}
+				<a href="#sketch-{{numSketches}}" class="drawer-item thumbnail">
+					{% for image in entry.images %}
+						<img src="{{image.thumbnail}}" alt="">
+					{% endfor %}
+				 </a>
+			{% endif %}
+
+		 {% endfor %}
+		</nav>
+		<div class="drawer-shade"></div>
+	{% endif %}
+	
+	{% if page.type == "text" %}
+		<a class="drawer-activator">Index</a>
+		<nav class="drawer">
+			{% for entry in pageData %}
+				<li class="drawer-list-item"><a href="#{{entry.title | slugify}}" class="drawer-item">{{entry.title}}</a></li>
+			{% endfor %}
+		</nav>
+		<div class="drawer-shade"></div>
+	{% endif %}

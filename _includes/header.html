@@ -1,0 +1,41 @@
+{% if jekyll.environment == 'stage'%}
+  <p class="staging_banner">
+    <a href="http://thomaslyonmills.com">
+      This is a development version of the site. Click here to see the live content at http://thomaslyonmills.com.
+    </a>
+  </p>
+{% endif %}
+
+<header class="site-header" role="banner">
+  
+
+
+    {% include  side-nav.html  %} 
+        
+
+    
+
+
+
+  <div class="wrapper">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    <!-- <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
+    
+    
+  
+    {% if page_paths %}
+      <nav class="site-nav">
+        <a class="site-nav-trigger page-link">Menu</a>
+        <a href="../" class="{% if page.section == 'Paintings'%}active {%endif%}page-link">Painting</a>        
+        <a href="{% link prints.html %}" class="{% if page.section == 'prints'%}active {%endif%}page-link">Prints</a>        
+        <a href="{% link sketchbook.html %}" class="{% if page.section == 'sketchbook'%}active {%endif%}page-link">Sketchbooks</a>        
+        <a href="{% link poetry.html %}" class="{% if page.section == 'poems'%}active {%endif%}page-link">Poetry</a>        
+        <a href="{% link statements.html %}" class="{% if page.section == 'statements'%}active {%endif%}page-link">Statements</a>        
+        <a href="{% link fiction.html %}" class="{% if page.section == 'fiction'%}active {%endif%}page-link">Fiction</a>        
+        <a href="{% link biography.html %}" class="{% if page.section == 'biography'%}active {%endif%}page-link">Biography</a>        
+        <a href="{% link contact.html %}" class="{% if page.section == 'contact'%}active {%endif%}page-link">Contact</a>        
+      </nav>
+    {% endif %}
+  </div>
+</header>

@@ -1,0 +1,51 @@
+{% if page.section == "Paintings" %}
+  {% assign pageData = site.data.paintings %}
+{% elsif page.section == "prints" %}
+  {% assign pageData = site.data.prints %}
+{% elsif page.section == "sketchbook" %}
+  {% assign pageData = site.data.sketchbooks %}
+{% endif %}
+
+{% for entry in pageData %}
+  {% if page.section == "Paintings" or page.section ==  "prints" %}
+    <section class="painting artwork" id="{{ entry.title | slugify }}">
+    {% elsif page.section == "sketchbook" %}
+      {% assign numSketches = numSketches | plus: 1 %}
+    <section class="sketchbook artwork" id="sketch-{{numSketches}}">
+
+  {% endif %}
+  
+  
+  {% for image in entry.images %}
+    {% if image.detail %}
+      {% include image-detail.html  %}
+    {% endif %}
+  {% endfor %}
+
+  {% for item in entry.images %}
+    {% if item.detail %}
+      <div class="detail hidden">
+        <img src="{{item.detail}}" alt="" class="lazyload">
+      </div>
+    {% endif %}
+    {% if item.image %}
+      <figure class="artwork-figure">
+        <img class="artwork-image lazyload" src="{{item.image}}" alt="{{entry.title}}">
+
+        {% if entry.title %}
+          <figcaption class="artwork-caption">
+          <h2 class="artwork-title">{{entry.title}}</h2>
+          <span class="artwork-materials">{{entry.materials}}</span>
+          <span class="artwork-dimensions">{{entry.height}}&quot; &times; {{entry.width}}&quot;</span>
+          <span class="artwork-date">{{entry.start-date}} {% if entry.end-date %} – {{entry.end-date}} {% endif %}</span>
+          {% if entry.collection %}
+            <span class="artwork-collection">{{entry.collection}}</span>
+          {% endif %}
+        </figcaption>
+        {% endif %}
+        
+      </figure>
+    {% endif %}
+  {% endfor %}
+  </section>
+{% endfor %}

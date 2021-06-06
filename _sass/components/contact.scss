@@ -1,0 +1,43 @@
+.contact{
+	@include grid-container;
+
+	h2{
+		@extend %small-cap;
+		@include respond-above(small){
+			@include grid-push(7);		
+		};
+	}
+
+	div{
+		margin-bottom:2em;
+		@include respond-above(small){
+			@include grid-column(4);
+			@include grid-push(7);	
+		};
+		
+		&:nth-child(4){
+			@include respond-above(small){
+				@include grid-push(1);			
+			};
+		}
+	}
+
+	img{
+		@include respond-above(small){
+			@include grid-column(2);
+			@include grid-push(4);	
+		};
+		
+	}
+
+
+}
+
+
+
+
+
+address{
+	font-style:normal;
+	letter-spacing:0.03em;
+}

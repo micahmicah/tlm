@@ -1,0 +1,97 @@
+- title: "Cervus"
+  start-date: "2014"
+  end-date: "2018"
+  height: "23.25"
+  width: "9"
+  materials: "etching, aquatint, drypoint, scraper "
+  images:
+    - image: ../assets/img/cervus/cervus-1200.jpg
+    - thumbnail: ../assets/img/cervus/cervus-thumb.jpg
+    - detail: ../assets/img/cervus/cervus-detail.jpg
+
+- title: "Night Lizard"
+  start-date: "2018"
+  height: "9"
+  width: "12"
+  materials: "etching, aquatint, drypoint, scraper"
+  images:
+    - image: ../assets/img/night-lizard/night-lizard-1200.jpg
+    - thumbnail: ../assets/img/night-lizard/night-lizard-thumb.jpg
+    - detail: ../assets/img/night-lizard/night-lizard-detail.jpg
+
+- title: "Two Masks"
+  start-date: "2015"
+  end-date: "2017"
+  materials: "Etching, aquatint, scraper"
+  width: "18.5"
+  height: "15.75"
+  images:
+    - image: ../assets/img/two-masks/two-masks-1200.jpg
+    - thumbnail: ../assets/img/two-masks/two-masks-thumb.jpg
+    - detail: ../assets/img/two-masks/two-masks-detail-1.jpg
+
+- title: "Il Fossore"
+  start-date: "2010"
+  end-date: "2015"
+  materials: "etching, drypoint, aquatint, scraper, handcoloring"
+  height: "13.5"
+  width: "10.5"
+  images:
+    - image: ../assets/img/il-fossore-print/il-fossore-print-1200.jpg
+    - thumbnail: ../assets/img/il-fossore-print/il-fossore-print-thumb.jpg
+    - detail: ../assets/img/il-fossore-print/il-fossore-print-detail-1.jpg
+  collection: "Collection Rhode Island School of Design Museum of Art"
+
+- title: "Vidi Salire dal Mare una Bestia"
+  start-date: "2005"
+  end-date: "2013"
+  materials: "etching, aquatint, drypoint, scraper"
+  height: "9.25"
+  width: "23.25"
+  images:
+    - image: ../assets/img/vidi-salire/vidi-salire-1200.jpg
+    - thumbnail: ../assets/img/vidi-salire/vidi-salire-thumb.jpg
+    - detail: ../assets/img/vidi-salire/vidi-salire-detail-1.jpg
+
+- title: "Vidi Salire dal Mare Una Bestia II "
+  start-date: "2014"
+  height: "9.25"
+  width: "23.25"
+  materials: "etching, aquatint, drypoint, scraper"
+  images:
+    - image: "../assets/img/una-bestia-ii/una-bestia-II-1200.jpg"
+    - detail: "../assets/img/una-bestia-ii/una-bestia-II-detail.jpg"
+    - thumbnail: "../assets/img/una-bestia-ii/una-bestia-II-thumb.jpg"
+
+- title: "3 Types of Fog"
+  start-date: "2007"
+  end-date: "2012"
+  materials: "etching, aquatint, drypoint, scraper"
+  height: "23.25"
+  width: "9.25"
+  images:
+    - image: ../assets/img/3-types-of-fog/3-types-of-fog-1200.jpg
+    - thumbnail: ../assets/img/3-types-of-fog/3-types-of-fog-thumb.jpg
+    - detail: ../assets/img/3-types-of-fog/3-types-of-fog-detail-1.jpg
+
+- title: "Puro e disposto a salire alle stelle"
+  start-date: "2007"
+  end-date: "2011"
+  materials: "etching, aquatint, drypoint, scraper"
+  height: "13.75"
+  width: "10.75"
+  images:
+    - image: ../assets/img/puro/puro-1200.jpg
+    - thumbnail: ../assets/img/puro/puro-thumb.jpg
+    - detail: ../assets/img/puro/puro-detail-1.jpg
+
+- title: "Goodnight"
+  start-date: "2007"
+  end-date: "2012"
+  materials: "etching, aquatint, drypoint, scraper"
+  height: "18.5"
+  width: "9.5"
+  images:
+    - image: ../assets/img/goodnight/goodnight-1200.jpg
+    - thumbnail: ../assets/img/goodnight/goodnight-thumb.jpg
+    - detail: ../assets/img/goodnight/goodnight-detail-1.jpg

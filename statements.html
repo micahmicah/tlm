@@ -1,0 +1,21 @@
+---
+section: statements
+layout: page
+permalink: /statements
+type: text
+---
+<section class="statements">
+	{% for entry in site.data.statements %}
+		<article id="{{entry.title | slugify}}" class="statement">
+			{% if entry.image %}
+				<div class="image-wrapper">
+					<img src="{{entry.image}}" alt="">
+				</div>
+			{% endif %}
+			<div class="text-wrapper">
+				<h2>{{entry.title}}</h2>
+				{{entry.statement | markdownify}}
+			</div>
+		</article>
+	{% endfor %}
+</section>

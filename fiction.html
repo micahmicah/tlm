@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /fiction/
+section: fiction
+type: text
+---
+
+
+{% for entry in site.data.fiction %}
+  <section class="poem" id="{{entry.title | slugify}}">
+  	<h2 class="poem-title">{{entry.title}}</h2>
+  	{{entry.piece}}
+  	<div class="metadata">
+	  	<time class="date">{{entry.date}}</time>
+	  	{% if entry.dedication %}
+	  		<br> <span class="dedication">{{entry.dedication}}</span>
+	  	{% endif %}
+  	</div>
+  </section>
+{% endfor %}

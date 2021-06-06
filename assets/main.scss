@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "neat/neat";
+
+@import "dependencies/color";
+@import "dependencies/responsive";
+@import "dependencies/type";
+
+@import "foundation/base";
+
+@import "components/intro";
+@import "components/artwork";
+@import "components/global-nav";
+@import "components/poems";
+@import "components/statements";
+@import "components/contact";
+@import "components/biography";
+@import "components/side-nav";
+
+.staging_banner{
+	
+	a{
+		color:$background-color;
+		background:$text-color;
+		text-align:center;
+		display:block;
+		padding-top:0.25em;
+		padding-bottom:0.125em;
+		border:1px solid $text-color;
+		&:hover{
+			background:$background-color;
+			color:$text-color;
+		}
+	}
+}
+
+

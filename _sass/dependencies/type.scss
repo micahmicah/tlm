@@ -1,0 +1,91 @@
+%serif{
+	font-family:"adobe-caslon-pro", "times new roman", "times", serif;
+}
+
+%small-cap{
+	font-variant-caps: all-small-caps;
+	-moz-font-feature-settings: "c2sc", "smcp";
+	-webkit-font-feature-settings: "c2sc", "smcp";
+	font-feature-settings: "c2sc", "smcp";
+	letter-spacing:0.04em;
+}
+
+%upper-lower{
+
+
+}
+
+%oldstyle-figures{
+	font-variant-numeric: oldstyle-nums;
+	-moz-font-feature-settings: "onum";
+ 	-webkit-font-feature-settings: "onum";
+ 	font-feature-settings: "onum";
+}
+
+%smoothing{
+	-webkit-font-smoothing:antialiased;
+}
+
+%no-smoothing{
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.cap{
+	@extend %small-cap;
+}
+
+/* --------------------------------------------------------
+
+Remove the unit of a length
+@param {Number} $number - Number to remove unit from
+@return {Number} - Unitless number
+
+-------------------------------------------------------- */
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+
+$serif-m:(
+	base:(16px, 22px)
+);
+
+$serif-l:(
+	base:(19px, 26px)
+);
+
+$serif-xl:(
+  base:(26px, 36px),
+  medium:(26px, 36px)
+);
+
+
+@mixin text-size($fs-map: $regular, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $keyNumber in $fs-map {
+
+    @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+    } @else {
+      @warn "Breakpoints have not been defined correctly";
+    }
+
+    // @debug $fs-breakpoint;
+    // @debug $keyNumber;
+
+    $fontSize: nth($keyNumber, 1);
+    $leading: nth($keyNumber, 2);
+    $leading-unitless: calc(#{strip-unit($leading)} / #{strip-unit($fontSize)});
+
+    // @debug $fontSize;
+    // @debug $leading;
+    // @debug $leading-unitless;
+
+    @include respond-above($fs-breakpoint) {
+      font-size: $fontSize;
+      line-height: $leading-unitless;
+    };
+  }
+}

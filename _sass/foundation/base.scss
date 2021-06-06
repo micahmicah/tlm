@@ -1,0 +1,90 @@
+html{
+
+}
+
+
+body{
+	background: $background-color;
+	color:$text-color;
+	@extend %serif;
+	padding-bottom:14em;
+	@include grid-container;
+	margin:2em;
+}
+
+main{
+
+}
+
+h1{
+	
+}
+
+h2{
+	@include text-size($serif-l);
+	@extend %smoothing;
+	font-weight:normal;
+	letter-spacing:0.125em;
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+h5{
+
+}
+
+h6{
+
+}
+
+strong{
+
+}
+
+em{
+
+}
+
+a:link,
+a:visited{
+	color:$gray;
+	text-decoration:none;
+
+	&:hover{
+		color:$text-color;
+	}
+}
+
+p,
+address{
+	@include text-size($serif-l);
+	@extend %smoothing;
+	color:$text-color;
+}
+
+p{
+	@extend %oldstyle-figures;
+	letter-spacing:0.03em;
+
+}
+
+figure{
+	margin:0;
+}
+
+figcaption{
+
+}
+
+section,
+article{
+	&:focus{
+		outline:none;
+	}
+}

@@ -1,0 +1,130 @@
+.artwork{
+	margin-bottom:14em;
+	margin-top:2em;
+	@include grid-container;
+	img{
+		max-width:100%;
+		@include respond-above(small){
+			max-width:95vw;
+			max-height:80vh;
+		};
+			
+	}
+	
+	&.painting{
+		img{
+			&:hover{
+			cursor:pointer;
+			}
+		}
+	}
+	figure{
+		text-align:center;
+		figcaption{
+			@include text-size($serif-m);
+			@extend %serif;
+			margin-top:3em;
+			text-align:left;
+
+			@include respond-above(small){
+				@include grid-column(8);
+				@include grid-push(4);
+			};
+			
+		
+
+			.artwork-title{
+				@include text-size($serif-l);
+				@extend %no-smoothing;
+				margin:0;
+				letter-spacing:0.06em;
+
+			}
+			
+			.artwork-materials,
+			.artwork-dimensions,
+			.artwork-date,
+			.artwork-collection{
+				@extend %oldstyle-figures;
+				color:$gray;
+				letter-spacing:0.08em;
+				max-width:28em;
+				margin-bottom:0;
+				margin-top:0;
+				display:block;
+				// background:red;
+
+			}
+		}
+	}
+
+	.artwork-detail-label{
+		@extend %small-cap;
+		color:$gray;
+		letter-spacing:0.125em;
+		text-align:center;
+		display:flex;
+		justify-content: center;
+		align-content:middle;
+		margin-bottom:2em;
+
+		.detail-label-text{
+			padding-top:0.15em;
+		}
+		svg{
+			width:23px;
+			padding:0 0.25em;
+			path{
+				transition: all 0.3s ease-in-out;
+				fill:$gray;
+			}
+		}
+
+		&:hover{
+			cursor:pointer;
+			svg{
+				path{
+					fill:white;
+				}
+			}
+		}
+	}
+}
+
+.detail{
+	position:fixed;
+	opacity:0;
+	top:0;
+	left:0;
+	width:100vw;
+	height:100vh;
+	background:rgba(0,0,0,0.8);
+	transition: opacity 0.5s ease-in-out;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+
+	img{
+		margin:2vh auto;
+		display:block;
+		max-width:95vw;
+		max-height:95vh;
+	}
+
+	&.hidden{
+		z-index:-20;
+	}
+
+	&.active{
+		opacity:1.0;
+	}
+}
+
+.sketchbooks-label{
+	@include respond-above(small){
+		@include grid-column(6);
+		@include grid-push(6);
+		margin-bottom:4em;
+	};
+	
+}

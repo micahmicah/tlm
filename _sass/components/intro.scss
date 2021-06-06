@@ -1,0 +1,43 @@
+.intro{
+	@extend %smoothing;
+	@include grid-container;
+	padding:1em 0em 1em 0em;
+	min-height:90vh;
+	max-height:100vh;
+	div{
+		@include respond-above(small){
+			@include grid-column(10);
+			@include grid-push(1);
+		};
+
+		@include respond-above(medium){
+			@include grid-column(8);
+			@include grid-push(2);
+
+		};
+		@include respond-above(large){
+			@include grid-column(6);
+			@include grid-push(3);
+		};
+		
+	}
+	p{
+		@include text-size($serif-xl);
+		// max-width:20em;
+		margin:1em auto;
+
+	}
+	cite{
+		// @include text-size($serif-l);
+		font-size:13px;
+		@extend %no-smoothing;
+		text-transform: uppercase;
+		letter-spacing: 0.33em;
+		// @extend %small-cap;
+		font-style:normal;
+		// max-width:20em;
+		margin: 0 auto;
+		display: block;
+
+	}
+}
