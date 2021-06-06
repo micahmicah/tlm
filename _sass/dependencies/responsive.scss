@@ -3,6 +3,7 @@
 $breakpoints: (
   base: 0px,
   small: 512px,
+  middle: 800px,
   medium: 768px,
   large: 1024px,
   huge: 1300px,
@@ -45,7 +46,6 @@ $breakpoints: (
   }
 }
 
-
-@mixin container-padding($top, $sides){
-    padding:$top $sides;
+@mixin container-padding($top, $sides) {
+  padding: $top $sides;
 }
