@@ -31,12 +31,13 @@
     - detail: assets/img/liminatus-savant/liminatus-savant-detail.jpg
     - thumbnail: assets/img/liminatus-savant/liminatus-savant-thumb.jpg
 
-- title: "Liminatus Ascension Eclipse"
+- title: "Liminatus Ascension Eclipse – Hashim"
   start-date: "2009"
   end-date: "2021"
   height: "20.25"
   width: "24"
   materials: "watercolor, acrylic, conte crayon on pieced paper"
+  collection: "Private Collection"
   images:
     - image: assets/img/liminatus-ascencsion-eclipse/liminatus-ascension-eclipse-1200.jpg
     - detail: assets/img/liminatus-ascencsion-eclipse/liminatus-ascension-eclipse-detail-1.jpg
@@ -85,16 +86,16 @@
     - detail: assets/img/liminatus-mizoguchi/liminatus-mizoguchi-detail-2.jpg
     - thumbnail: assets/img/liminatus-mizoguchi/liminatus-mizoguchi-thumb.jpg
 
-- title: "Liminatus Guo Xi"
-  start-date: "2001"
-  end-date: "2020"
-  height: "32"
-  width: "31.25"
-  materials: "watercolor, acrylic, oil, conte crayon, found paper on pieced paper"
-  images:
-    - image: assets/img/liminatus-guo-xi/liminatus-guo-xi-1200.jpg
-    - detail: assets/img/liminatus-guo-xi/liminatus-guo-xi-detail.jpg
-    - thumbnail: assets/img/liminatus-guo-xi/liminatus-guo-xi-thumb.jpg
+# - title: "Liminatus Guo Xi"
+#   start-date: "2001"
+#   end-date: "2020"
+#   height: "32"
+#   width: "31.25"
+#   materials: "watercolor, acrylic, oil, conte crayon, found paper on pieced paper"
+#   images:
+#     - image: assets/img/liminatus-guo-xi/liminatus-guo-xi-1200.jpg
+#     - detail: assets/img/liminatus-guo-xi/liminatus-guo-xi-detail.jpg
+#     - thumbnail: assets/img/liminatus-guo-xi/liminatus-guo-xi-thumb.jpg
 
 - title: "Liminatus Celan"
   start-date: "2020"
@@ -695,7 +696,7 @@
     - thumbnail: assets/img/the-beautiful-butterfly-flutters-away/the-beautiful-butterfly-flutters-away-thumb.jpg
     - detail: assets/img/the-beautiful-butterfly-flutters-away/the-beautiful-butterfly-flutters-away-detail-1.jpg
 
-- title: "Catacomb 4"
+- title: "Catacomb 4-11"
   start-date: "2008"
   end-date: "2011"
   materials: "watercolor, charcoal, graphite"
