@@ -31,6 +31,28 @@
     - detail: assets/img/liminatus-savant/liminatus-savant-detail.jpg
     - thumbnail: assets/img/liminatus-savant/liminatus-savant-thumb.jpg
 
+- title: "Liminatus Noh"
+  start-date: "2001"
+  end-date: "2021"
+  height: "14"
+  width: "67.5"
+  materials: "watercolor, oil, acrylic, woodcut, offset print on pieced paper"
+  images:
+    - image: assets/img/liminatus-noh/liminatus-noh-1200.jpg
+    - detail: assets/img/liminatus-noh/liminatus-noh-detail.jpg
+    - thumbnail: assets/img/liminatus-noh/liminatus-noh-thumb.jpg
+
+- title: "Liminatus Persici"
+  start-date: "1991"
+  end-date: "2021"
+  materials: "watercolor, acrylic, oil, marker, charcoal, woodcut on pieced paper"
+  height: "27.25"
+  width: "53"
+  images:
+    - image: assets/img/liminatus-persici/liminatus-persici-1200.jpg
+    - detail: assets/img/liminatus-persici/liminatus-persici-detail-2.jpg
+    - thumbnail: assets/img/liminatus-persici/liminatus-persici-thumb.jpg
+
 - title: "Liminatus Ascension Eclipse – Hashim"
   start-date: "2009"
   end-date: "2021"
@@ -53,6 +75,16 @@
     - detail: assets/img/liminatus-tarkovsky/liminatus-tarkovsky-detail-1.jpg
     - thumbnail: assets/img/liminatus-tarkovsky/liminatus-tarkovsky-thumb.jpg
 
+- title: "Liminatus Celan"
+  start-date: "2020"
+  height: "21.5"
+  width: "30"
+  materials: "watercolor, charcoal on paper"
+  images:
+    - image: assets/img/liminatus-celan/liminatus-celan-1200.jpg
+    - detail: assets/img/liminatus-celan/liminatus-celan-detail.jpg
+    - thumbnail: assets/img/liminatus-celan/liminatus-celan-thumb.jpg
+
 - title: "Liminatus Roscoe Mitchell"
   start-date: "2000"
   end-date: "2020"
@@ -63,6 +95,18 @@
     - image: assets/img/liminatus-roscoe-mitchell/liminatus-roscoe-mitchell-1200.jpg
     - detail: assets/img/liminatus-roscoe-mitchell/liminatus-roscoe-mitchell-detail.jpg
     - thumbnail: assets/img/liminatus-roscoe-mitchell/liminatus-roscoe-mitchell-thumb.jpg
+
+- title: "Liminatus Messiaen"
+  start-date: "2016"
+  end-date: "2020"
+  height: "14"
+  width: "21.25"
+  collection: "Private Collection"
+  materials: "watercolor, conte crayon, charcoal on pieced paper"
+  images:
+    - image: assets/img/liminatus-messiaen/liminatus-messiaen-1200.jpg
+    - detail: assets/img/liminatus-messiaen/liminatus-messiaen-detail.jpg
+    - thumbnail: assets/img/liminatus-messiaen/liminatus-messiaen-thumb.jpg
 
 - title: "Liminatus Habrodais"
   start-date: "2002"
@@ -96,16 +140,6 @@
 #     - image: assets/img/liminatus-guo-xi/liminatus-guo-xi-1200.jpg
 #     - detail: assets/img/liminatus-guo-xi/liminatus-guo-xi-detail.jpg
 #     - thumbnail: assets/img/liminatus-guo-xi/liminatus-guo-xi-thumb.jpg
-
-- title: "Liminatus Celan"
-  start-date: "2020"
-  height: "21.5"
-  width: "30"
-  materials: "watercolor, charcoal on paper"
-  images:
-    - image: assets/img/liminatus-celan/liminatus-celan-1200.jpg
-    - detail: assets/img/liminatus-celan/liminatus-celan-detail.jpg
-    - thumbnail: assets/img/liminatus-celan/liminatus-celan-thumb.jpg
 
 - title: "Liminatus Milosz"
   start-date: "2019"
