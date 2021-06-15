@@ -10,8 +10,11 @@ type: text
 			{% if entry.image %}
 				<div class="image-wrapper">
 					<img src="{{entry.image}}" alt="">
+					<img src="{{entry.image_b}}" alt="">
 				</div>
 			{% endif %}
+			
+
 			<div class="text-wrapper">
 				<h2>{{entry.title}}</h2>
 				{{entry.statement | markdownify}}

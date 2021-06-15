@@ -36,22 +36,22 @@
   end-date: "2021"
   height: "14"
   width: "67.5"
-  materials: "watercolor, oil, acrylic, woodcut, offset print on pieced paper"
+  materials: "watercolor, oil, acrylic, woodcut, offset print on pieced paper"
   images:
     - image: assets/img/liminatus-noh/liminatus-noh-1200.jpg
     - detail: assets/img/liminatus-noh/liminatus-noh-detail.jpg
     - thumbnail: assets/img/liminatus-noh/liminatus-noh-thumb.jpg
 
-- title: "Liminatus Persici"
+- title: "Liminatus Falconer"
   start-date: "1991"
   end-date: "2021"
   materials: "watercolor, acrylic, oil, marker, charcoal, woodcut on pieced paper"
   height: "27.25"
   width: "53"
   images:
-    - image: assets/img/liminatus-persici/liminatus-persici-1200.jpg
-    - detail: assets/img/liminatus-persici/liminatus-persici-detail-2.jpg
-    - thumbnail: assets/img/liminatus-persici/liminatus-persici-thumb.jpg
+    - image: assets/img/liminatus-falconer/liminatus-falconer-1200.jpg
+    - detail: assets/img/liminatus-falconer/liminatus-falconer-detail.jpg
+    - thumbnail: assets/img/liminatus-falconer/liminatus-falconer-thumb.jpg
 
 - title: "Liminatus Ascension Eclipse – Hashim"
   start-date: "2009"
