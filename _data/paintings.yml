@@ -42,12 +42,12 @@
     - detail: assets/img/liminatus-noh/liminatus-noh-detail.jpg
     - thumbnail: assets/img/liminatus-noh/liminatus-noh-thumb.jpg
 
-- title: "Liminatus Falconer"
+- title: "Liminatus Falconer 1"
   start-date: "1991"
   end-date: "2021"
   materials: "watercolor, acrylic, oil, marker, charcoal, woodcut on pieced paper"
-  height: "27.25"
-  width: "53"
+  height: "28.5"
+  width: "26"
   images:
     - image: assets/img/liminatus-falconer/liminatus-falconer-1200.jpg
     - detail: assets/img/liminatus-falconer/liminatus-falconer-detail.jpg
